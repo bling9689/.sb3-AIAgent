@@ -2386,3 +2386,23 @@ svg {
     transition-duration: 0.01ms !important;
   }
 }
+
+.dataset-upload-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  padding: 8px 11px;
+  border: 1px solid #cbd8ec;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #285ebc;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.dataset-upload-label:hover {
+  border-color: #a9c4f8;
+  background: #f4f8ff;
+}
