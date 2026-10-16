@@ -546,7 +546,6 @@ async function loadDataset() {
           showToast(`データセットを読み込めませんでした: ${uploadError.message}`, 'error');
         }
       });
-      label.addEventListener('click', () => picker.click());
       panel.append(label, picker);
     }
     showToast('同じフォルダーにデータセットが見つかりません。tasks.jsonl を選択してください。', 'info');
