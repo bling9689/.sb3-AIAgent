@@ -530,7 +530,7 @@ async function loadDataset() {
         const file = picker.files?.[0];
         if (!file) return;
         try {
-          const rows = (await file.text()).split(/\\r?\\n/).filter(Boolean).map((line, index) => {
+          const rows = (await file.text()).split(/\r?\n/).filter(Boolean).map((line, index) => {
             try { return JSON.parse(line); }
             catch { throw new Error(`tasks.jsonl の ${index + 1} 行目を解析できません。`); }
           });
